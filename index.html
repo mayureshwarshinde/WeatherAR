@@ -215,7 +215,7 @@
                         camera-controls
                         auto-rotate ar>
                         <div slot="hotspot-1">
-                            <div class="lbl" style="font-size: 50px; top: -50px;">Model Label</div>
+                            <div class="lbl" style="font-size: 50px; position: absolute; bottom: 900px;">Model Label</div>
                         </div>
                     </model-viewer>
                 
@@ -265,7 +265,7 @@
                 document.querySelector(".temp").innerHTML=Math.round(data.main.temp) + "° C";
                 document.querySelector(".wind").innerHTML=data.wind.speed + " km/h";
                 document.querySelector(".humidity").innerHTML=data.main.humidity + "%";
-                document.querySelector(".lbl").innerHTML=data.name+" "+Math.round(data.main.temp) + "° C";
+                document.querySelector(".lbl").innerHTML=data.name+" "+Math.round(data.main.temp) + "°C";
 
                 if(data.weather[0].main=="Clouds"){
                     weatherIcon.src="images/clouds.png";
